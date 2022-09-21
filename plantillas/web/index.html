@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="mx-32 my-20">
+        <div class="bg-emerald-600 p-5 flex justify-center ">
+            <img class="w-32 mr-5 " src="{% static 'img/logo2.png'%}" alt="">
+            <h1 class="text-8xl">Django Shop</h1>
+        </div>
+        <div class="mt-10 flex flex-col items-center gap-10  ">
+            <p class="basis-1/2 bg-emerald-500 p-2 rounded-xl">
+                <a class="text-3xl" href="{%url 'usuarios'%}">USUARIO</a>
+            </p>
+            <p class="basis-1/2 bg-emerald-500 p-2 rounded-xl">
+                <a class="text-3xl"href="{%url 'categoria'%}">CATEGORIAS</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="mx-32 my-20">
+        <div class="bg-emerald-600 p-5 flex justify-center ">
+            <img class="w-32 mr-5 " src="{% static 'img/logo2.png'%}" alt="">
+            <h1 class="text-8xl">Django Shop</h1>
+        </div>
+        <div class="mt-10 mx-72 ">
+            <div class="">
+                <p class="p-2 bg-green-700 hover:bg-green-500 "><b>Nombre:</b> {{nombre}}</p>
+                <p class=" p-2 bg-green-500 hover:bg-green-400 "><b>Apellidos:</b> {{apellido}}</p>
+                
+                <p class=" p-2 bg-green-400 hover:bg-green-300"><b>Carrera:</b> {{carrera}}</p>
+                <p class=" p-2 bg-green-300 hover:bg-green-200"><b>Edad:</b> {{edad}}</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button class="bg-emerald-500 shadow-lg shadow-cyan-500/50 p-2 mt-10 rounded-xl"><a href="{%url 'index'%}">Volver</a></button>
+        </div>
+    </div>
+</body>
+</html>
